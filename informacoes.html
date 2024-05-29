@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conheça a Linguagem R</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Detalhes sobre a Linguagem R</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="setup.html">Configuração</a></li>
+                <li><a href="informacoes.html">Sobre R</a></li>
+                <li><a href="exemplos.html">Exemplos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="historia">
+            <h2>A História da Linguagem R</h2>
+            <p>R foi desenvolvida por Ross Ihaka e Robert Gentleman na Universidade de Auckland nos anos 90. Inspirada pela linguagem S, R tornou-se essencial para análises estatísticas e ciência de dados, evoluindo constantemente com o apoio de uma comunidade global.</p>
+        </section>
+        
+        <section class="sintaxe">
+            <h2>Fundamentos da Sintaxe</h2>
+            <p>A sintaxe do R é clara e intuitiva, facilitando o aprendizado para iniciantes. Alguns exemplos básicos incluem:</p>
+            <ul>
+                <li><strong>Atribuição:</strong> <code>x <- 10</code></li>
+                <li><strong>Operações matemáticas:</strong> <code>soma <- x + 5</code></li>
+                <li><strong>Criação de vetores:</strong> <code>vetor <- c(1, 2, 3, 4, 5)</code></li>
+                <li><strong>Funções básicas:</strong> <code>media <- mean(vetor)</code></li>
+            </ul>
+        </section>
+        
+        <section class="variaveis">
+            <h2>Trabalhando com Variáveis</h2>
+            <p>Variáveis são essenciais em R, permitindo armazenar dados para operações futuras. Atribuição é feita com a seta (<code><-</code>), e os tipos de dados mais comuns incluem números, strings e vetores. Por exemplo:</p>
+            <ul>
+                <li><strong>Números:</strong> <code>numero <- 42</code></li>
+                <li><strong>Strings:</strong> <code>texto <- "Olá, Mundo!"</code></li>
+                <li><strong>Vetores:</strong> <code>vetor <- c(1, 2, 3, 4, 5)</code></li>
+            </ul>
+        </section>
+        
+        <section class="funcoes">
+            <h2>Funções em R</h2>
+            <p>Funções são blocos de código reutilizáveis que executam tarefas específicas. Em R, você pode usar funções embutidas ou criar suas próprias funções. Aqui estão alguns exemplos:</p>
+            <ul>
+                <li><strong>Funções Embutidas:</strong> <code>sqrt(16)</code> retorna a raiz quadrada de 16.</li>
+                <li><strong>Criação de Funções:</strong> 
+                    <pre><code>minha_funcao <- function(x) {
+  return(x * 2)
+}
+resultado <- minha_funcao(4)
+print(resultado)</code></pre>
+                </li>
+            </ul>
+        </section>
+
+        <section class="estrutura">
+            <h2>Estrutura de Programas em R</h2>
+            <p>Programas em R geralmente consistem de várias seções, incluindo a configuração do ambiente, a importação de dados, a transformação de dados, a análise e a visualização de resultados. Aqui está um exemplo de estrutura básica:</p>
+            <ol>
+                <li><strong>Configuração:</strong> Carregar bibliotecas e definir parâmetros.
+                    <pre><code>library(ggplot2)
+library(dplyr)</code></pre>
+                </li>
+                <li><strong>Importação de Dados:</strong> Carregar dados de um arquivo ou banco de dados.
+                    <pre><code>dados <- read.csv("meu_arquivo.csv")</code></pre>
+                </li>
+                <li><strong>Transformação de Dados:</strong> Limpar e preparar os dados para análise.
+                    <pre><code>dados <- dados %>%
+  filter(!is.na(coluna)) %>%
+  mutate(nova_coluna = coluna * 2)</code></pre>
+                </li>
+                <li><strong>Análise:</strong> Realizar análises estatísticas ou outras operações.
+                    <pre><code>resumo <- summary(dados)</code></pre>
+                </li>
+                <li><strong>Visualização:</strong> Criar gráficos e outras visualizações.
+                    <pre><code>ggplot(dados, aes(x = coluna1, y = coluna2)) +
+  geom_point() +
+  labs(title = "Meu Gráfico")</code></pre>
+                </li>
+            </ol>
+        </section>
+
+        <section class="video">
+            <video controls>
+                <source src="videos/tutorial-informacoes.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </section>
+    </main>
+</body>
+</html>

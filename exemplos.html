@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de R</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Exemplos Práticos de R</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="setup.html">Configuração</a></li>
+                <li><a href="informacoes.html">Sobre R</a></li>
+                <li><a href="exemplos.html">Exemplos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="exemplo-1">
+            <h2>Cálculo de Fatorial</h2>
+            <p>Veja como calcular o fatorial de um número em R:</p>
+            <pre><code># Função para calcular fatorial
+fatorial <- function(n) {
+  if(n == 0) {
+    return(1)
+  } else {
+    return(n * fatorial(n - 1))
+  }
+}
+
+# Exemplo de uso
+numero <- 5
+resultado <- fatorial(numero)
+print(paste("Fatorial de", numero, "é", resultado))
+            </code></pre>
+        </section>
+        
+        <section class="exemplo-2">
+            <h2>Verificação de Número Primo</h2>
+            <p>Confira como verificar se um número é primo em R:</p>
+            <pre><code># Função para verificar se um número é primo
+eh_primo <- function(n) {
+  if (n <= 1) {
+    return(FALSE)
+  }
+  for (i in 2:sqrt(n)) {
+    if (n %% i == 0) {
+      return(FALSE)
+    }
+  }
+  return(TRUE)
+}
+
+# Exemplo de uso
+numero <- 7
+resultado <- eh_primo(numero)
+if (resultado) {
+  print(paste(numero, "é um número primo"))
+} else {
+  print(paste(numero, "não é um número primo"))
+}
+            </code></pre>
+        </section>
+        
+        <section class="exemplo-3">
+            <h2>Operações Básicas</h2>
+            <p>Veja como realizar operações matemáticas básicas em R:</p>
+            <pre><code># Definindo os números
+a <- 15
+b <- 3
+
+# Operações básicas
+soma <- a + b
+subtracao <- a - b
+multiplicacao <- a * b
+divisao <- a / b
+
+# Exibindo resultados
+print(paste("Soma:", soma))
+print(paste("Subtração:", subtracao))
+print(paste("Multiplicação:", multiplicacao))
+print(paste("Divisão:", divisao))
+            </code></pre>
+        </section>
+
+        <section class="video">
+            <video controls>
+                <source src="videos/tutorial-exemplos.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </section>
+    </main>
+</body>
+</html>
