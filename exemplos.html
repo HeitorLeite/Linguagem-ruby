@@ -11,86 +11,90 @@
         <h1>Exemplos Práticos de R</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Principal</a></li>
-                <li><a href="setup.html">Configuração</a></li>
-                <li><a href="informacoes.html">Sobre R</a></li>
-                <li><a href="exemplos.html">Exemplos</a></li>
+              <li><a href="index.html">Principal</a></li>
+              <li><a href="setup.html">Módulo 1</a></li>
+              <li><a href="informacoes.html">Módulo 2</a></li>
+              <li><a href="exemplos.html">Módulo 3</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="exemplo-1">
-            <h2>Cálculo de Fatorial</h2>
-            <p>Veja como calcular o fatorial de um número em R:</p>
-            <pre><code># Função para calcular fatorial
-fatorial <- function(n) {
-  if(n == 0) {
-    return(1)
-  } else {
-    return(n * fatorial(n - 1))
-  }
-}
-
-# Exemplo de uso
-numero <- 5
-resultado <- fatorial(numero)
-print(paste("Fatorial de", numero, "é", resultado))
+            <h2>Calculadora simples com gráfico</h2>
+            <p>O programa em questão é uma calculadora simples implementada em R, que permite ao usuário realizar operações básicas (+, -, *, /) entre dois números. Além disso, o programa armazena os resultados das operações e gera um gráfico de barras horizontais que mostra visualmente os resultados das operações realizadas.</p>
+            <pre><code># Função de calculadora simples
+              calculadora <- function(a, b, operacao) {
+                if (operacao == "+") {
+                  return(a + b)
+                } else if (operacao == "-") {
+                  return(a - b)
+                } else if (operacao == "*") {
+                  return(a * b)
+                } else if (operacao == "/") {
+                  if (b == 0) {
+                    return("Erro: Divisão por zero!")
+                  } else {
+                    return(a / b)
+                  }
+                } else {
+                  return("Operação inválida!")
+                }
+              }
+              
+              # Vetores para armazenar resultados das operações
+              operacoes <- c()
+              resultados <- c()
+              
+              # Loop principal
+              repeat {
+                # Entrada do usuário
+                a <- as.numeric(readline(prompt="Entre com o primeiro número: "))
+                b <- as.numeric(readline(prompt="Entre com o segundo número: "))
+                operacao <- readline(prompt="Entre com a operação (+, -, *, /): ")
+              
+                # Resultado
+                resultado <- calculadora(a, b, operacao)
+                print(paste(a, operacao, b, "=", resultado))
+                
+                # Armazenar operação e resultado nos vetores
+                operacoes <- c(operacoes, paste(a, operacao, b))
+                resultados <- c(resultados, resultado)
+              
+                # Perguntar ao usuário se deseja continuar
+                continuar <- readline(prompt="Deseja fazer outra operação? (s/n): ")
+                if (tolower(continuar) != "s") {
+                  break
+                }
+              }
+              
+              # Gerar gráfico de barras horizontais dos resultados
+              library(ggplot2)
+              df_resultados <- data.frame(Operacao = operacoes, Resultado = resultados)
+              
+              # Ajuste de cores e tema do gráfico
+              grafico_resultados <- ggplot(df_resultados, aes(x = Operacao, y = Resultado, fill = Operacao)) +
+                geom_bar(stat = "identity", width = 0.5) +
+                labs(title = "Resultados das Operações", x = "Operação", y = "Resultado") +
+                theme_minimal() +
+                theme(
+                  plot.title = element_text(size = 8, face = "bold", color = "white"),
+                  axis.title.x = element_text(size = 5, color = "white"),
+                  axis.title.y = element_text(size = 5, color = "white"),
+                  axis.text.x = element_text(size = 5, angle = 45, hjust = 1, color = "white"),
+                  axis.text.y = element_text(size = 5, color = "white"),
+                  legend.title = element_blank(),
+                  legend.position = "none",
+                  panel.background = element_rect(fill = "black", color = "black"),
+                  plot.background = element_rect(fill = "black", color = "black")
+                ) +
+                scale_fill_brewer(palette = "Paired")
+              
+              # Salvar o gráfico como PNG
+              ggsave("resultados_operacoes.png", plot = grafico_resultados, width = 800, height = 600, units = "px")
+              
+              print("Programa encerrado.")
+              
             </code></pre>
-        </section>
-        
-        <section class="exemplo-2">
-            <h2>Verificação de Número Primo</h2>
-            <p>Confira como verificar se um número é primo em R:</p>
-            <pre><code># Função para verificar se um número é primo
-eh_primo <- function(n) {
-  if (n <= 1) {
-    return(FALSE)
-  }
-  for (i in 2:sqrt(n)) {
-    if (n %% i == 0) {
-      return(FALSE)
-    }
-  }
-  return(TRUE)
-}
-
-# Exemplo de uso
-numero <- 7
-resultado <- eh_primo(numero)
-if (resultado) {
-  print(paste(numero, "é um número primo"))
-} else {
-  print(paste(numero, "não é um número primo"))
-}
-            </code></pre>
-        </section>
-        
-        <section class="exemplo-3">
-            <h2>Operações Básicas</h2>
-            <p>Veja como realizar operações matemáticas básicas em R:</p>
-            <pre><code># Definindo os números
-a <- 15
-b <- 3
-
-# Operações básicas
-soma <- a + b
-subtracao <- a - b
-multiplicacao <- a * b
-divisao <- a / b
-
-# Exibindo resultados
-print(paste("Soma:", soma))
-print(paste("Subtração:", subtracao))
-print(paste("Multiplicação:", multiplicacao))
-print(paste("Divisão:", divisao))
-            </code></pre>
-        </section>
-
-        <section class="video">
-            <video controls>
-                <source src="videos/tutorial-exemplos.mp4" type="video/mp4">
-                Seu navegador não suporta a tag de vídeo.
-            </video>
         </section>
     </main>
 </body>
