@@ -3,223 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conheça a Linguagem R</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Introdução a Ruby</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Detalhes sobre a Linguagem R</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Principal</a></li>
-                <li><a href="setup.html">Módulo 1</a></li>
-                <li><a href="informacoes.html">Módulo 2</a></li>
-                <li><a href="exemplos.html">Módulo 3</a></li>
-            </ul>
-        </nav>
+        <h1>Introdução a Ruby</h1>
+        <a href="index.html" class="btn">Voltar ao Início</a>
     </header>
     <main>
-        <section class="historia">
-            <h2>A História da Linguagem R</h2>
-            <p>R foi desenvolvido por Ross Ihaka e Robert Gentleman na Universidade de Auckland nos anos 90. Inspirada pela linguagem S, R tornou-se essencial para análises estatísticas e ciência de dados, evoluindo constantemente com o apoio de uma comunidade global.</p>
+      <center>
+      <audio controls autoplay muted>
+
+        <source src="Audio.mp3" type="audio/mp3">
+      
+      Your browser does not support the audio element.
+      
+      </audio>
+    </center>
+        <section>
+            <h2>1. O que é Ruby?</h2>
+            <p>Ruby é uma linguagem de programação de alto nível, interpretada e orientada a objetos, criada para ser simples e produtiva. Ela combina uma sintaxe elegante e fácil de ler com uma ampla gama de funcionalidades, o que a torna uma escolha popular entre desenvolvedores que buscam facilidade e eficiência.</p>
         </section>
 
-        <section class="introducao">
-            <h2>Introdução à Linguagem R</h2>
-            <p>R é uma linguagem de programação e ambiente de software livre utilizada para computação estatística e gráficos. Criada originalmente por Ross Ihaka e Robert Gentleman, R rapidamente se tornou uma ferramenta indispensável para estatísticos, cientistas de dados e pesquisadores. Mantida pela R Foundation for Statistical Computing, a linguagem é valorizada por sua flexibilidade e vasta gama de pacotes disponíveis.</p>
-            <p><strong>Principais usos:</strong> R é amplamente utilizada para análises estatísticas avançadas, visualização de dados, machine learning, análise de séries temporais e mineração de dados. Seus principais usuários são das áreas de bioinformática, econometria, ciências sociais, marketing e finanças.</p>
-            <p><strong>Comparação com outras linguagens:</strong> R é frequentemente comparada com Python, SAS e SPSS. Sua vantagem reside na especialização em estatísticas e visualização, oferecendo uma grande variedade de pacotes e funções específicas. Python, por ser uma linguagem de propósito geral, oferece versatilidade além da análise de dados. SAS e SPSS, por serem softwares comerciais, oferecem suporte robusto, mas R se destaca por ser open source e ter uma comunidade ativa.</p>
+        <section>
+            <h2>2. Histórico da Linguagem Ruby</h2>
+            <p>Ruby foi criada por Yukihiro “Matz” Matsumoto em 1995 no Japão. Matz, inspirado por linguagens como Perl, Smalltalk, Lisp e Eiffel, tinha como objetivo desenvolver uma linguagem que priorizasse a simplicidade e a alegria do programador ao escrever código.  
+              Em 2005, a popularidade de Ruby aumentou consideravelmente com o lançamento do Ruby on Rails, um framework para desenvolvimento de aplicativos web, criado por David Heinemeier Hansson. Rails tornou Ruby amplamente utilizado no desenvolvimento web devido à sua capacidade de agilizar a criação de aplicações robustas.
+              </p>
         </section>
 
-        <section class="sintaxe">
-            <h2>Fundamentos da Sintaxe</h2>
-            <p>A sintaxe do R é clara e intuitiva, facilitando o aprendizado para iniciantes. Alguns exemplos básicos incluem:</p>
+        <section>
+            <h2>3. Finalidade de Ruby</h2>
+            <p>Ruby foi desenvolvida com o foco de ser uma linguagem que prioriza o programador, oferecendo uma experiência de codificação mais intuitiva e direta. Ela é projetada para facilitar a criação de software ao minimizar a complexidade de tarefas comuns e promover uma escrita de código mais legível e agradável.  
+              A linguagem é ideal para desenvolvedores que buscam rapidez no desenvolvimento, especialmente em aplicativos web, mas também é versátil o suficiente para automação de scripts e desenvolvimento de ferramentas.
+              </p>
+        </section>
+
+        <section>
+            <h2>4. Usos de Ruby</h2>
             <ul>
-                <li><strong>Atribuição:</strong> <code>x <- 10</code></li>
-                <li><strong>Operações matemáticas:</strong> <code>soma <- x + 5</code></li>
-                <li><strong>Criação de vetores:</strong> <code>vetor <- c(1, 2, 3, 4, 5)</code></li>
-                <li><strong>Funções básicas:</strong> <code>media <- mean(vetor)</code></li>
+                <li>Desenvolvimento Web: Graças ao Ruby on Rails, Ruby tornou-se popular no desenvolvimento de sites e aplicativos web, especialmente em startups e empresas de tecnologia.</li>
+                <li>Automação de Tarefas: Ruby é usada para escrever scripts de automação que podem executar tarefas repetitivas e administrativas.</li>
+                <li>Prototipagem Rápida: Ruby permite a criação de protótipos de aplicações em tempo reduzido, sendo uma excelente ferramenta para validar ideias de negócio.</li>
+                <li>DevOps: Ferramentas como Chef e Capistrano, usadas para automação de infraestrutura, são baseadas em Ruby.</li>
             </ul>
-            <pre><code># Atribuição de valores a variáveis
-x <- 5
-y <- 10
-
-# Operações aritméticas
-soma <- x + y
-produto <- x * y
-
-# Funções básicas
-media <- mean(c(x, y))
-desvio_padrao <- sd(c(x, y))
-
-# Imprimir resultados
-print(soma)
-print(produto)
-print(media)
-print(desvio_padrao)</code></pre>
+            <p>Exemplos de empresas que usam Ruby: GitHub, Shopify, Airbnb, Twitch.</p>
         </section>
 
-        <section class="estrutura-dados">
-            <h2>Estruturas de Dados em R</h2>
-            <p>R oferece diversas estruturas de dados fundamentais, como vetores, matrizes, listas e data frames. Cada uma dessas estruturas é útil para diferentes tipos de análises e manipulações de dados.</p>
+        <section>
+            <h2>5. Vantagens de Usar Ruby</h2>
             <ul>
-                <li><strong>Vetores:</strong> Sequências de elementos do mesmo tipo.</li>
-                <li><strong>Matrizes:</strong> Vetores bidimensionais.</li>
-                <li><strong>Listas:</strong> Coleções de elementos de diferentes tipos.</li>
-                <li><strong>Data frames:</strong> Tabelas que permitem a manipulação e análise de dados tabulares.</li>
+                <li>Sintaxe Simples e Legível: Ruby foi projetada para ser simples e próxima da linguagem humana, o que facilita o aprendizado e a manutenção do código.</li>
+                <li>Orientação a Objetos Pura: Em Ruby, tudo é tratado como um objeto, o que facilita a modularização e a reutilização do código.</li>
+                <li>Alta Produtividade: Com frameworks como o Ruby on Rails, é possível criar aplicações web complexas em muito menos tempo comparado a outras linguagens.</li>
+                <li>Grande Comunidade e Suporte: A comunidade Ruby é extremamente ativa, com uma vasta biblioteca de gems (pacotes de código reutilizáveis) que podem ser integrados facilmente em projetos.</li>
             </ul>
-            <pre><code># Vetor
-vetor <- c(1, 2, 3, 4, 5)
-
-# Matriz
-matriz <- matrix(1:9, nrow = 3, ncol = 3)
-
-# Lista
-lista <- list(nome = "João", idade = 25, notas = c(7.5, 8.0, 9.0))
-
-# Data frame
-data_frame <- data.frame(
-  nome = c("Ana", "Bruno", "Carlos"),
-  idade = c(22, 25, 30),
-  nota = c(8.5, 9.0, 7.5)
-)
-
-# Exibir estruturas
-print(vetor)
-print(matriz)
-print(lista)
-print(data_frame)</code></pre>
         </section>
 
-        <section class="manipulacao">
-            <h2>Manipulação de Dados</h2>
-            <p>A manipulação de dados em R é facilitada por uma série de funções nativas e pacotes adicionais. Subsetting permite selecionar partes específicas de uma estrutura de dados, filtros são usados para selecionar dados com base em condições lógicas, e operações com data frames incluem a agregação, combinação e transformação de dados. Pacotes como <code>dplyr</code> e <code>tidyr</code> oferecem funcionalidades avançadas para manipulação eficiente de dados.</p>
-            <pre><code># Subsetting
-sub_vetor <- vetor[1:3]
-sub_data_frame <- data_frame[data_frame$idade > 24, ]
-
-# Funções dplyr
-library(dplyr)
-
-# Selecionar colunas
-data_frame_selecionado <- select(data_frame, nome, idade)
-
-# Filtrar linhas
-data_frame_filtrado <- filter(data_frame, idade > 24)
-
-# Mutate: criar nova coluna
-data_frame_mutado <- mutate(data_frame, idade_5_anos = idade + 5)
-
-# Summarize: sumarizar dados
-resumo <- summarise(data_frame, media_idade = mean(idade))
-
-# Join: combinar data frames
-data_frame2 <- data.frame(
-  nome = c("Ana", "Bruno", "Carlos"),
-  cidade = c("São Paulo", "Rio de Janeiro", "Belo Horizonte")
-)
-
-data_frame_combinado <- left_join(data_frame, data_frame2, by = "nome")
-
-# Exibir resultados
-print(sub_vetor)
-print(sub_data_frame)
-print(data_frame_selecionado)
-print(data_frame_filtrado)
-print(data_frame_mutado)
-print(resumo)
-print(data_frame_combinado)</code></pre>
+        <section>
+            <h2>6. Desvantagens de Usar Ruby</h2>
+            <ul>
+                <li>Performance: Ruby não é a linguagem mais rápida em termos de execução, especialmente quando comparada a linguagens como C, Go ou Java. Para projetos que exigem alta performance em processamento intensivo, Ruby pode não ser a melhor escolha.</li>
+                <li>Escalabilidade: Embora Ruby on Rails seja ótimo para prototipagem rápida e desenvolvimento de MVPs, algumas empresas enfrentam desafios ao tentar escalar grandes aplicações Ruby, exigindo soluções de otimização.</li>
+                <li>Mercado de Trabalho Mais Reduzido: Apesar de sua popularidade em startups e empresas de tecnologia, o mercado de trabalho para desenvolvedores Ruby pode ser menor quando comparado a linguagens mais mainstream como JavaScript, Python ou Java.</li>
+                <li>Curva de Aprendizado do Ruby on Rails: Embora Ruby seja uma linguagem relativamente fácil de aprender, o framework Ruby on Rails pode ser intimidador para iniciantes, devido à sua estrutura complexa e extensa.</li>
+            </ul>
         </section>
 
-        <section class="visualizacao">
-            <h2>Visualização de Dados</h2>
-            <h3>Gráficos Base</h3>
-            <p>R é conhecido por suas capacidades gráficas robustas. A função <code>plot</code> é uma das mais básicas e versáteis, permitindo a criação de gráficos de dispersão, linhas e barras com facilidade. Outras funções gráficas básicas incluem <code>hist</code> para histogramas e <code>boxplot</code> para diagramas de caixa.</p>
-            <pre><code># Gráfico de dispersão
-plot(data_frame$idade, data_frame$nota, main = "Idade vs Nota", xlab = "Idade", ylab = "Nota")
-
-# Histograma
-hist(data_frame$nota, main = "Distribuição das Notas", xlab = "Nota", breaks = 5)
-
-# Boxplot
-boxplot(data_frame$nota, main = "Boxplot das Notas", ylab = "Nota")</code></pre>
-
-            <h3>ggplot2</h3>
-            <p>Para visualizações mais avançadas e personalizáveis, o pacote <code>ggplot2</code> é amplamente utilizado. Desenvolvido por Hadley Wickham, <code>ggplot2</code> implementa a gramática dos gráficos, permitindo a construção de visualizações complexas de maneira modular e intuitiva. Com <code>ggplot2</code>, usuários podem criar gráficos de alta qualidade, ajustando detalhes como cores, formas, facetas e temas.</p>
-            <pre><code># Carregar pacote ggplot2
-library(ggplot2)
-
-# Gráfico de dispersão com ggplot2
-ggplot(data_frame, aes(x = idade, y = nota)) +
-  geom_point() +
-  labs(title = "Idade vs Nota", x = "Idade", y = "Nota")
-
-# Gráfico de barras com ggplot2
-ggplot(data_frame, aes(x = nome, y = nota)) +
-  geom_bar(stat = "identity") +
-  labs(title = "Notas por Nome", x = "Nome", y = "Nota")
-
-# Histograma com ggplot2
-ggplot(data_frame, aes(x = nota)) +
-  geom_histogram
-  (binwidth = 1, fill = "blue", color = "black") +
-  labs(title = "Distribuição das Notas", x = "Nota", y = "Contagem")
-  # Boxplot com ggplot2
-  ggplot(data_frame, aes(x = nome, y = nota)) +
-    geom_boxplot() +
-    labs(title = "Boxplot das Notas por Nome", x = "Nome", y = "Nota")
-  
-  # Gráfico de linha com ggplot2
-  ggplot(data_frame, aes(x = idade, y = nota, group = nome)) +
-    geom_line() +
-    labs(title = "Evolução da Nota por Idade", x = "Idade", y = "Nota")
-  </code></pre>
-  
-          </section>
-  
-          <section class="recursos">
-              <h2>Recursos Avançados</h2>
-              <p>R oferece uma vasta gama de recursos avançados para análise estatística e visualização de dados:</p>
-              <ul>
-                  <li><strong>Modelagem Estatística:</strong> Utilização de modelos lineares generalizados, análise de séries temporais, e métodos de machine learning.</li>
-                  <li><strong>Programação Funcional:</strong> Implementação de programação funcional com funções de alta ordem como <code>apply</code>, <code>lapply</code>, e <code>sapply</code>.</li>
-                  <li><strong>Visualização Interativa:</strong> Criação de dashboards e aplicações web interativas com o pacote <code>shiny</code>.</li>
-                  <li><strong>Big Data:</strong> Manipulação e análise de grandes conjuntos de dados com pacotes como <code>data.table</code> e <code>SparkR</code>.</li>
-              </ul>
-          </section>
-  
-          <section class="aprendizado">
-              <h2>Recursos de Aprendizado</h2>
-              <p>Aprender R é acessível através de uma variedade de recursos:</p>
-              <ul>
-                  <li><strong>Cursos Online:</strong> Plataformas como Coursera, DataCamp e edX oferecem cursos completos desde introdução até tópicos avançados.</li>
-                  <li><strong>Documentação Oficial:</strong> A documentação do CRAN fornece guias detalhados, manuais e referências para todas as funções e pacotes.</li>
-                  <li><strong>Comunidades Online:</strong> Participação em fóruns como Stack Overflow, listas de discussão e grupos de usuários R oferecem suporte e troca de conhecimentos.</li>
-                  <li><strong>Livros:</strong> Livros especializados e tutoriais abrangem desde fundamentos até aplicações avançadas em estatística e ciência de dados.</li>
-              </ul>
-          </section>
-  
-          <section class="ferramentas">
-              <h2>Ferramentas de Desenvolvimento</h2>
-              <p>Para desenvolver em R, diversas ferramentas estão disponíveis:</p>
-              <ul>
-                  <li><strong>RStudio:</strong> Um ambiente de desenvolvimento integrado (IDE) projetado especificamente para R, oferecendo editor de código, console, e visualizações integradas.</li>
-                  <li><strong>Jupyter Notebooks:</strong> Utilizado para criar documentos que combinam código R executável com texto formatado, equações e visualizações interativas.</li>
-                  <li><strong>VSCode:</strong> Editor de código fonte com suporte para R através de extensões, oferecendo uma experiência de desenvolvimento flexível.</li>
-              </ul>
-          </section>
-  
-          <section class="conclusao">
-              <h2>Conclusão</h2>
-              <p>R é muito mais do que uma linguagem de programação; é uma poderosa ferramenta para análise estatística e visualização de dados, amplamente utilizada em diversas áreas acadêmicas e industriais. Com uma comunidade ativa e um ecossistema robusto de pacotes, R continua a evoluir e a capacitar seus usuários a enfrentar desafios complexos de dados com confiança.</p>
-          </section>
-          <section class="video-tutorial">
-            <h2>Vídeo</h2>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/yq1xTWlKHqY?si=g7LPUkfsYK3WVGh1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+        <section>
+            <h2>7. Aplicações Práticas de Ruby</h2>
+            <p>Ruby é amplamente usado no desenvolvimento web com Ruby on Rails, automação de infraestrutura com ferramentas como Chef e Puppet, e scripts de automação.</p>
         </section>
-      </main>
-  </body>
-  </html>
-  
+    </main>
+</body>
+</html>

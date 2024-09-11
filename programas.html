@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programa Exemplo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Programa Exemplo</h1>
+      <a href="index.html" class="btn">Voltar ao Início</a>
+    </header>
+    <main>
+      <section>
+        <h2>Programas Básicos em Ruby</h2>
+        <p>
+          Agora que o ambiente está configurado, vamos criar alguns programas
+          simples para entender como Ruby funciona.
+        </p>
+        <pre><code>Olá Mundo
+              puts ‘Olá, Mundo!’
+                </code></pre>
+        <pre><code>Calculadora Básica
+                  Puts ‘Digite o primeiro número:’
+                  Num1 = gets.chomp.to_i
+                  Puts ‘Digite o segundo número:’
+                  Num2 = gets.chomp.to_i
+                  Soma = num1 + num2
+                  Puts “A soma dos números é: #{soma}”                
+                    </code></pre>
+        <pre><code>Estrutura Condicional
+                      Puts ‘Digite um número:’
+                      Numero = gets.chomp.to_i
+                      If numero > 0
+                        Puts ‘O número é positivo’
+                      Elsif numero < 0
+                        Puts ‘O número é negativo’
+                      Else
+                        Puts ‘O número é zero’
+                      End
+                                    
+                        </code></pre>
+        <pre><code>Looping com Array
+                          Frutas = [‘maçã’, ‘banana’, ‘laranja’]
+                          Frutas.each do |fruta|
+                            Puts “Eu gosto de #{fruta}”
+                          End
+                                  
+                            </code></pre>
+        <pre><code>Classe e Objeto em Ruby
+                              Class Pessoa
+                              Attr_accessor :nome, :idade
+                              Def initialize(nome, idade)
+                                @nome = nome
+                                @idade = idade
+                              End
+                              Def apresentar
+                                Puts “Olá, meu nome é #{@nome} e eu tenho #{@idade} anos.”
+                              End
+                            End
+                            Pessoa1 = Pessoa.new(‘Maria’, 30)
+                            Pessoa1.apresentar
+                              
+                                </code></pre>
+      </section>
+    </main>
+  </body>
+</html>

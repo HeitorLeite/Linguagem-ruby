@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalação do Ruby</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Instalação do Ruby</h1>
+        <a href="index.html" class="btn">Voltar ao Início</a>
+    </header>
+    <main>
+        <section class="video-tutorial"></section>
+            <h2>Tutorial em Vídeo</h2>
+            <div class="video-container">
+                <iframe width="700" height="315" src="https://www.youtube.com/embed/ZZOcHmH5h90?si=4nGX41mTxAgocNni" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section>
+            <h2>Passo a Passo para Instalar o Ruby</h2>
+            <ol>
+                <li>
+                    <h3>Baixar o Ruby</h3>
+                    <p>Visite o site oficial do Ruby em <a href="https://www.ruby-lang.org/pt/" target="_blank">ruby-lang.org</a>.</p>
+                </li>
+                <li>
+                    <h3>Escolher seu Sistema Operacional</h3>
+                    <p>Selecione o link de download apropriado para o seu sistema operacional (Windows, macOS ou Linux).</p>
+                </li>
+                <li>
+                    <h3>Instalar no Windows</h3>
+                    <p>
+                        <ul>
+                            <li>Baixe o instalador do Ruby para Windows.</li>
+                            <li>Execute o instalador e siga as instruções na tela.</li>
+                            <li>Escolha as configurações padrão para a maioria dos usuários.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <h3>Instalar no macOS</h3>
+                    <p>
+                        <ul>
+                            <li>Use o Homebrew para instalar Ruby. Abra o terminal e execute:</li>
+                        </ul>
+                        <pre><code>brew install ruby</code></pre>
+                    </p>
+                </li>
+                <li>
+                    <h3>Instalar no Linux</h3>
+                    <p>
+                        <ul>
+                            <li>Abra o terminal.</li>
+                            <li>Atualize a lista de pacotes do sistema.</li>
+                            <li>Instale o Ruby usando o gerenciador de pacotes do seu sistema.</li>
+                        </ul>
+                        <pre><code># Comandos para Debian/Ubuntu
+sudo apt update
+sudo apt install ruby
+# Comandos para Fedora
+sudo dnf install ruby
+# Comandos para Arch Linux
+sudo pacman -S ruby</code></pre>
+                    </p>
+                </li>
+                <li>
+                    <h3>Verificar a Instalação</h3>
+                    <p>
+                        Abra o terminal e execute <code>ruby -v</code> para verificar se a instalação foi bem-sucedida.
+                    </p>
+                </li>
+                <li>
+                    <h3>Teste</h3>
+                    <p>Crie um arquivo <code>hello.rb</code> e escreva o código abaixo:</p>
+                    <pre><code>puts "Hello, world!"</code></pre>
+                    <p>Execute com <code>ruby hello.rb</code> no terminal. Se a mensagem aparecer, a instalação funcionou.</p>
+                </li>
+            </ol>
+        </section>
+    </main>
+</body>
+</html>
